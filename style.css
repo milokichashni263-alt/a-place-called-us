@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Georgia", serif;
+    background:#f7f2eb;
+    overflow:hidden;
+}
+
+.background{
+    position:fixed;
+    inset:0;
+    background:linear-gradient(180deg,#f8f4ef,#ece2d4);
+}
+
+.container{
+    position:relative;
+    z-index:2;
+    height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    padding:20px;
+}
+
+.moon{
+    font-size:42px;
+    margin-bottom:18px;
+    color:#7a5b46;
+}
+
+h1{
+    font-size:54px;
+    color:#5b4334;
+    margin-bottom:12px;
+}
+
+.quote{
+    color:#8a7668;
+    line-height:1.8;
+    margin-bottom:40px;
+}
+
+.password-box{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    width:300px;
+}
+
+input{
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    outline:none;
+    background:white;
+    font-size:16px;
+}
+
+button{
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    background:#8b6a53;
+    color:white;
+    font-size:16px;
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+}
+
+.welcome-screen{
+    position:fixed;
+    inset:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#f7f2eb;
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:.8s;
+}
+
+.welcome-screen.show{
+    opacity:1;
+    visibility:visible;
+}
+
+.welcome-screen h2{
+    font-size:48px;
+    color:#5b4334;
+    text-align:center;
+}
