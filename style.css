@@ -93,6 +93,8 @@ button:hover{
     visibility:hidden;
 
     transition:.8s;
+
+    z-index:10;
 }
 
 .welcome-screen.show{
