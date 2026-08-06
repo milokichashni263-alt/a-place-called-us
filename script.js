@@ -1,6 +1,7 @@
 const passwordInput = document.getElementById("password");
 const unlockButton = document.getElementById("unlockButton");
 const welcomeScreen = document.getElementById("welcomeScreen");
+const homePage = document.getElementById("homePage");
 const container = document.querySelector(".container");
 
 const correctPassword = "081929";
@@ -20,8 +21,19 @@ function unlock() {
         // Hide password page
         container.style.display = "none";
 
-        // Show welcome page
+        // Show welcome screen
         welcomeScreen.classList.add("show");
+
+        // After 3 seconds
+        setTimeout(() => {
+
+            // Hide welcome screen
+            welcomeScreen.classList.remove("show");
+
+            // Show home page
+            homePage.classList.add("show");
+
+        }, 3000);
 
     } else {
 
