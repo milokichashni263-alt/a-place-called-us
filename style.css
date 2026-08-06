@@ -107,3 +107,81 @@ button:hover{
     color:#5b4334;
     text-align:center;
 }
+
+/* ===========================
+   HOME PAGE
+=========================== */
+
+.home-page{
+
+    position:fixed;
+    inset:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#f7f2eb;
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:1s;
+
+    z-index:5;
+
+}
+
+.home-page.show{
+
+    opacity:1;
+    visibility:visible;
+
+}
+
+.hero{
+
+    text-align:center;
+    padding:30px;
+
+}
+
+.hero h1{
+
+    font-size:58px;
+    color:#5b4334;
+    margin-bottom:20px;
+
+}
+
+.hero-text{
+
+    color:#8a7668;
+    font-size:20px;
+    line-height:1.8;
+
+}
+
+.scroll-down{
+
+    margin-top:60px;
+
+    color:#7a5b46;
+
+    font-size:18px;
+
+    animation:float 1.8s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(10px);
+    }
+
+}
